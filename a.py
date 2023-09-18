@@ -1,6 +1,6 @@
 
 # Python program to demonstrate searching operation
-# in binary search tree without recursion
+
 class newNode:
 
 	# Constructor to create a new node
@@ -8,9 +8,11 @@ class newNode:
 		self.data = data
 		self.left = None
 		self.right = None
+  
 
 # Function to check the given
 # key exist or not
+     
 def iterativeSearch(root, key):
 	
 	# Traverse until root reaches
@@ -59,7 +61,7 @@ if __name__ == '__main__':
 	insert(root, 30)
 	insert(root, 20)
 	insert(root, 40)
-	insert(root, 70)
+	insert(root, 50)
 	insert(root, 60)
 	insert(root, 80)
 	if iterativeSearch(root, 15):
