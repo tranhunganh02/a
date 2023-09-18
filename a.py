@@ -8,10 +8,6 @@ class newNode:
 		self.data = data
 		self.left = None
 		self.right = None
-  
-
-# Function to check the given
-# key exist or not
      
 def iterativeSearch(root, key):
 	
@@ -63,10 +59,10 @@ if __name__ == '__main__':
 	insert(root, 40)
 	insert(root, 50)
 	insert(root, 60)
-	insert(root, 80)
+	insert(root, 90)
 	if iterativeSearch(root, 15):
 		print("Yes")
 	else:
 		print("No")
 
-# This code is contributed by PranchalK
+# This code is contribgit pushuted by PranchalK
