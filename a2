@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Check if three parameters are provided
+if [ $# -ne 3 ]; then
+    echo "The program of Student ID needs three parameters"
+    exit 1
+fi
+
+# Store the parameters in variables
+operator=$1
+number1=$2
+number2=$3
+
+# Perform the calculations based on the operator
+case $operator in
+    add)
+        result=$((number1 + number2))
+        echo "add: $number1 + $number2 = $result"
+        ;;
+    multiply)
+        result=$((number1 * number2))
+        echo "multiply: $number1 * $number2 = $result"
+        ;;
+    compare)
+        if [ $number1 -ge $number2 ]; then
+            echo "$number1 is greater than or equal to $number2"
+        else
+            echo "$number1 is smaller than $number2"
+        fi
+        ;;
+    *)
+        echo "The program of Student ID requires input 'add' or 'multiply' or 'compare' for the first parameter"
+        exit 1
+        ;;
+esac
